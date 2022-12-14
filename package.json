@@ -1,15 +1,26 @@
 {
-  "name": "lnmp",
+  "name": "login",
   "version": "1.0.0",
-  "description": "",
   "main": "login.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node login.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
-  }
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnghelaRodriguezBarrios/H2212S2_10.git"
+  },
+  "bugs": {
+    "url": "https://github.com/AnghelaRodriguezBarrios/H2212S2_10/issues"
+  },
+  "homepage": "https://github.com/AnghelaRodriguezBarrios/H2212S2_10#readme",
+  "description": ""
 }
