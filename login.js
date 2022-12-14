@@ -9,11 +9,11 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(__dirname + '/'));
 
 var conexion = mysql.createConnection({
-	host: "localhost",
-	user: "root",
-	password: "admin",
-	database: "db_landing_page"
-});
+    host: "localhost",
+    user: "root",
+    password: "root",
+    database: "dblogin",
+  });
 
 conexion.connect(function (error) {
 	if (error) {
@@ -50,7 +50,7 @@ app.post("/api/contactanos", (req, res) => {
 });
 
 app.get('/', function (req, res) {
-	res.sendFile(__dirname + "/index.html");
+	res.sendFile(__dirname + "/Institucion.html");
 });
 
 app.get('/login', function (req, res) {
